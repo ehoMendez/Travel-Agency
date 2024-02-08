@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    color: rgb(80, 32, 156);
+}
+.container-header{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.container-header img{
+    width: 35px;
+    height: 35px;
+}
+
+.limite-section{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/*Fim do header*/
+.secao-formulario{
+    background-image: url("img/bahia.jpg");
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+.secao-formulario .header-form{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(80, 32, 156);
+    gap: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.secao-formulario .header-form img{
+    width: 20px;
+    height: 20px;
+    transform:  rotate(-40deg);
+    
+}
+.formulario{
+    background-color: white;
+    padding: 20px 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.dados-preencher{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 0px;
+}
+.dados-preencher input{
+    padding: 8px;
+}
+
+.dados-datas{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    
+}
+.dados-preencher-datas{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 10px;
+    padding: 8px 0px;   
+}
+.dados-preencher-datas input{
+   padding: 7px;
+}
+.quarto-cama, .quarto-cama p{
+    padding:10px 0px;
+}
+.preferencias-hospedagem, .preferencias-hospedagem p{
+   padding: 10px 0px;
+}
+.preferencias-hospedagem label{
+    margin-right: 20px;
+    
+}
+.dados-viagem{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.origem, .chegada{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 10px;
+    padding: 8px 0px;  
+}
+select{
+   padding: 7px;
+}
+
+button{
+    border: none;
+    background-color:rgb(80, 32, 156);
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+}
+button:hover{
+    border: 1px solid  black;
+    transition: 1s;
+    background-color:rgb(113, 45, 222);
+    
+}
+
+.container-ofertas, .explore {
+    padding: 50px 0px;
+    width: 100%;
+    background-color: rgb(227, 225, 225);
+}
+
+.ofertas-title, .ofertas-subtitle{
+    padding-bottom: 10px;
+}
+
+
+.ofertas-fotos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.foto-rj{
+    position: relative;
+    width: 540px;
+    height: 450px;
+
+}
+.foto-rj img{
+height: 450px;
+width: 540px;
+object-fit: cover;
+}
+@media(max-width:1100px){
+.foto-rj, .foto-rj img{
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+}
+.ofertas-fotos{
+    flex-wrap: wrap;
+}
+.demais-fotos-ofertas{
+    justify-content: center;
+}
+}
+
+ .legenda{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.399);
+    padding: 10px;
+   margin: 0;
+  color: white;
+}
+
+.demais-fotos-ofertas{
+    display:flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:10px;
+
+}
+.foto-25{
+    position: relative;
+    width: 255px;
+    height: 220px;
+}
+.foto-25 img{
+    object-fit: cover;
+    width: 255px;
+    height: 220px;
+}
+
+
+.container-explore{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 49%;
+    margin-bottom: 30px;
+}
+.card img{
+    width: 100%;
+}
+.card-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 241, 241);
+
+}
+
+footer{
+    background-color:rgb(80, 32, 156); 
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+
+.footer-container img{
+   width: 20px;
+}
+
+.footer-contato div, .footer-redes div{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
